@@ -23,7 +23,7 @@ body {
   height: 40px;
   display: flex;
   flex-direction: row;
-  margin-left: -400px;
+  margin-left: 30px;
   position: fixed;
   align-items: center;
   justify-content: center;
@@ -68,7 +68,7 @@ body {
   background-clip: none;
 }
 
-.hamburger {
+/* .hamburger {
   height: 40px;
   width: 40px;
   margin-left: 10px;
@@ -81,7 +81,7 @@ body {
   background: linear-gradient(90deg, #00dbde, rgb(173, 12, 173));
   transform: rotate(180deg);
   transition: 0.5s;
-}
+} */
 
 .tagline {
   height: 856px;
@@ -113,15 +113,7 @@ body {
 
 }
 
-@keyframes taglineanimation {
-  from {
-    transform: translateX(-300px)
-  }
 
-  to {
-    transform: translateX(0);
-  }
-}
 
 .taglineheading,
 .taglinepara {
