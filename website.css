@@ -413,7 +413,7 @@ form {
   animation: tiltAnimation 1s ease-in-out infinite;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .textblocks {
     background-color: transparent;
     display: flex;
@@ -526,70 +526,34 @@ form {
   }
 
   .addressbar {
-    margin-top: 200px;
+    margin-top: 100px;
     height: auto;
-    width: auto;
-    border: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    background: linear-gradient(to right,
-        rgba(20, 3, 3, 0.404),
-        rgba(22, 5, 5, 0.548));
-    font-family: Roboto mono;
-    border-radius: 215px;
-    text-align: left;
-
+    padding: 50px;
+    border-radius: 160px;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 
-  .addressbar ul {
-    list-style: none;
-    padding-left: 0;
+  .links,
+  .about,
+  .contactus {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
   }
 
-  a {
-    text-decoration: none;
-    color: black;
-
-  }
-
-
-
-  .addressbar .links,
-  .addressbar .about,
-  .addressbar .contactus {
-    height: auto;
-    width: auto;
-    color: white;
-  }
-
-  .linklogo {
-    border: none;
-    border-radius: 10px;
-    width: 40px;
-    height: 40px;
-    display: flex;
-  }
-
-
-  .linklogo:hover,
-  .contactlogo:hover,
-  .aboutlogo:hover {
-    transform: rotate(360deg);
-    transition: 1s;
+  .linklogo,
+  .contactlogo,
+  .aboutlogo {
+    margin: 0 auto;
   }
 
   .address {
-    color: black;
+    text-align: center;
   }
-
-
-
-
 }
 
-@media screen and (max-width:900px) and (min-width:600px) {
+@media screen and (max-width:900px) and (min-width:768px) {
   .textblocks {
     background-color: transparent;
     display: flex;
