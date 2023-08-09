@@ -76,6 +76,35 @@
 
     }
 
+    .whatsappicon,
+    .mailicon {
+      height: 30px;
+      width: 30px;
+    }
+
+    .youtubeicon,
+    .instaicon,
+    .githubicon,
+    .fbicon {
+      height: 25px;
+      width: 25px;
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .youtubeicon:hover,
+    .instaicon:hover,
+    .githubicon:hover,
+    .fbicon:hover {
+      animation: tiltAnimation 1s ease-in-out infinite;
+    }
+
+    .linklogo,
+    .contactlogo,
+    .aboutlogo {
+      visibility: hidden;
+    }
+
     @media screen and (max-width: 768) {
       .textblocks {
         background-color: transparent;
@@ -88,6 +117,19 @@
         text-align: left;
         background: linear-gradient(90deg, #00dbde, purple);
         font-family: Roboto mono;
+      }
+
+
+      .mailicon:hover,
+      .whatsappicon:hover {
+        animation: tiltAnimation 1s ease-in-out infinite;
+
+      }
+
+      .whatsappicon,
+      .mailicon {
+        height: 30px;
+        width: 30px;
       }
 
       .linklogo,
@@ -253,6 +295,23 @@
         color: black;
       }
 
+      .youtubeicon,
+      .instaicon,
+      .githubicon,
+      .fbicon {
+        height: 25px;
+        width: 25px;
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      .youtubeicon:hover,
+      .instaicon:hover,
+      .githubicon:hover,
+      .fbicon:hover {
+        animation: tiltAnimation 1s ease-in-out infinite;
+      }
+
 
 
 
@@ -270,6 +329,35 @@
         text-align: left;
         background: linear-gradient(90deg, #00dbde, purple);
         font-family: Roboto mono;
+      }
+
+      .mailicon:hover,
+      .whatsappicon:hover {
+        animation: tiltAnimation 1s ease-in-out infinite;
+
+      }
+
+      .whatsappicon,
+      .mailicon {
+        height: 30px;
+        width: 30px;
+      }
+
+      .youtubeicon,
+      .instaicon,
+      .githubicon,
+      .fbicon {
+        height: 25px;
+        width: 25px;
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      .youtubeicon:hover,
+      .instaicon:hover,
+      .githubicon:hover,
+      .fbicon:hover {
+        animation: tiltAnimation 1s ease-in-out infinite;
       }
 
       .linklogo,
@@ -607,6 +695,7 @@
 </head>
 
 <body>
+
   <div class="block1">
 
     <h2 class="heading1">
@@ -647,10 +736,14 @@
       <img class="linklogo" src="picture/linklogo.png">
       <h3 class="linkheading">Links</h3>
       <ul>
-        <li class="youtube"><a href="https://www.youtube.com/@srbsw/">Youtube</a></li>
-        <li class="instagram"><a href="https://www.instagram.com/shahzeb__awan/">Instagram</a></li>
-        <li class="facebook"><a href="https://www.facebook.com/valeedmalikk">Facebook</a></li>
-        <li class="github"><a href="https://github.com/waleeddcoder">Github</a></li>
+        <li class="youtube"><a href="https://www.youtube.com/@srbsw/"><img class="youtubeicon" src="picture/youtube.png"
+              alt=""></a></li>
+        <li class="instagram"><a href="https://www.instagram.com/shahzeb__awan/"><img class="instaicon"
+              src="picture/instagramicon.png" alt=""></a></li>
+        <li class="facebook"><a href="https://www.facebook.com/valeedmalikk"><img class="fbicon"
+              src="picture/facebookicon.png" alt=""></a></li>
+        <li class="github"><a href="https://github.com/waleeddcoder"><img class="githubicon"
+              src="picture/githubicon.png" alt=""></a></li>
       </ul>
 
 

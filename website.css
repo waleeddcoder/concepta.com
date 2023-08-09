@@ -315,9 +315,11 @@ a:hover {
   transition: 1s;
 }
 
-.whatsappicon {
-  height: 50px;
-  width: 50px;
+
+.whatsappicon,
+.mailicon {
+  height: 30px;
+  width: 30px;
 }
 
 @keyframes tiltAnimation {
@@ -435,6 +437,23 @@ form {
 }
 
 .newsletterlogo:hover {
+  animation: tiltAnimation 1s ease-in-out infinite;
+}
+
+.youtubeicon,
+.instaicon,
+.githubicon,
+.fbicon {
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.youtubeicon:hover,
+.instaicon:hover,
+.githubicon:hover,
+.fbicon:hover {
   animation: tiltAnimation 1s ease-in-out infinite;
 }
 
