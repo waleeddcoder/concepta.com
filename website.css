@@ -315,6 +315,30 @@ a:hover {
   transition: 1s;
 }
 
+.whatsappicon {
+  height: 50px;
+  width: 50px;
+}
+
+@keyframes tiltAnimation {
+
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(15deg);
+  }
+}
+
+
+.mailicon:hover,
+.whatsappicon:hover {
+  animation: tiltAnimation 1s ease-in-out infinite;
+
+}
+
 .address {
   color: black;
 }
