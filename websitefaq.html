@@ -4,11 +4,134 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>faq</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@900&display=swap"
+    rel="stylesheet">
+  <title>Concepta:FAQS</title>
+  <style>
+    body {
+
+      background: linear-gradient(90deg, #00dbde, purple);
+      color: white;
+      margin: 0;
+      padding: 0;
+      height: auto;
+      width: auto;
+
+
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .faq-item {
+      border-bottom: 1px solid #ddd;
+      padding: 20px 0;
+
+    }
+
+    .faq-question {
+      font-size: 18px;
+      font-weight: bold;
+      background: linear-gradient(90deg, black, grey);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: none;
+      font-family: Roboto mono;
+
+
+    }
+
+    .faq-answer {
+      margin-top: 10px;
+      font-size: 16px;
+      font-family: Roboto mono;
+
+    }
+
+    .backhomecontainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      justify-content: center;
+    }
+
+    .backhome {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      justify-content: center;
+      bottom: -5%;
+      text-decoration: none;
+      color: black;
+      font-family: Roboto mono;
+    }
+
+    .backhome:hover {
+      opacity: 0.8;
+      color: black;
+    }
+
+    .backhomeicon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      justify-content: center;
+    }
+
+    .backhomeicon:hover {
+      transform: rotate(360deg);
+      transition: 1s;
+    }
+  </style>
+  <title>FAQ Section</title>
 </head>
 
 <body>
-  <p>han bhai kia puchna h bht zaban chl ri h teri?</p>
+
+  <div class="faq-container">
+    <div class="faq-item">
+      <div class="faq-question">What is your mode of teaching?</div>
+      <div class="faq-answer">We offer online classes preferably on online platforms like zoom or google meet.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">How much time will it take to complete a course?</div>
+      <div class="faq-answer">It all depends upon how much are you willing to participate and complete the assignements
+        and exercises on time. The more you are willing to take interest the more quickly we will complete the course
+        may be even before the course timeline.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Can I drop course in the middle?</div>
+      <div class="faq-answer">We will highly recommed you not to do so, however you are always free to drop but it will
+        not be endorsed.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">how much time will u teach daily?</div>
+      <div class="faq-answer">We provide quality teaching experience. You can choose the time which best suits your
+        schedule, we will make sure to give you our best.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">When do we have to deposit the fee?</div>
+      <div class="faq-answer">You will be given two trial sessions, if you wish to continue with us, only then you have
+        to submit the course fee.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">is the timeline same for all courses?</div>
+      <div class="faq-answer">No, the time required to complete a course varies from course to course.</div>
+    </div>
+
+  </div>
+  <div class="backhomecontainer">
+    <img class="backhomeicon" src="picture/homeicon.png">
+    <h3 class="backhome"><a href="website.html">Back to Homepage</a></h3>
+  </div>
 </body>
 
 </html>

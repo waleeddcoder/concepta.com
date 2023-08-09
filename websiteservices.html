@@ -4,14 +4,608 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@900&display=swap"
+    rel="stylesheet">
+  <title>Concepta: About</title>
+  <style>
+    body {
+      background: linear-gradient(90deg, #00dbde, purple);
+      color: white;
+      margin: 0;
+      padding: 0;
+      height: auto;
+      width: auto;
+    }
+
+    .block1 {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+      height: 600;
+      width: auto;
+      background: linear-gradient(to right,
+          rgba(20, 3, 3, 0.404),
+          rgba(22, 5, 5, 0.548));
+      padding: 30px;
+      border-radius: 80px;
+
+
+
+    }
+
+    .heading1 {
+      background: linear-gradient(90deg, white, grey);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: none;
+      font-family: Roboto mono;
+    }
+
+    .body1 {
+      background: linear-gradient(90deg, white, grey);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: none;
+      font-family: Roboto mono;
+      font-size: larger;
+
+    }
+
+    @media screen and (max-width: 600px) {
+      .textblocks {
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+        width: auto;
+        justify-content: space-around;
+        text-align: left;
+        background: linear-gradient(90deg, #00dbde, purple);
+        font-family: Roboto mono;
+      }
+
+      .block1 {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        width: auto;
+        background: linear-gradient(to right,
+            rgba(20, 3, 3, 0.404),
+            rgba(22, 5, 5, 0.548));
+        border-radius: 80px;
+
+
+
+      }
+
+      .heading1 {
+        background: linear-gradient(90deg, white, grey);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: none;
+      }
+
+
+      .block2 {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: auto;
+        width: auto;
+        background: linear-gradient(to right,
+            rgba(20, 3, 3, 0.404),
+            rgba(22, 5, 5, 0.548));
+        border-radius: 80px;
+      }
+
+      .heading2 {
+        background: linear-gradient(90deg, white, grey);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: none;
+      }
+
+      .body2 {
+        margin-bottom: 110px;
+      }
+
+      .learnmore {
+        background: linear-gradient(90deg, black, purple);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: none;
+
+      }
+
+      .learnmore:hover {
+        cursor: pointer;
+        font-size: bold;
+      }
+
+      .block3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: auto;
+        font-family: Roboto mono;
+        position: relative;
+      }
+
+      .block3::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(picture/cristiano-firmani-tmTidmpILWw-unsplash.jpg);
+        background-size: cover;
+        filter: blur(5px);
+        z-index: -1;
+      }
+
+
+
+      .heading3 {
+        background: linear-gradient(90deg, white, grey);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: none;
+      }
+
+      .body3 {
+        margin-bottom: 100px;
+      }
+
+      .addressbar {
+        margin-top: 200px;
+        height: auto;
+        width: auto;
+        border: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        background: linear-gradient(to right,
+            rgba(20, 3, 3, 0.404),
+            rgba(22, 5, 5, 0.548));
+        font-family: Roboto mono;
+        border-radius: 215px;
+        text-align: left;
+
+      }
+
+      .addressbar ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+
+      }
+
+
+
+      .addressbar .links,
+      .addressbar .about,
+      .addressbar .contactus {
+        height: auto;
+        width: auto;
+        color: white;
+      }
+
+      .linklogo {
+        border: none;
+        border-radius: 10px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+      }
+
+
+      .linklogo:hover,
+      .contactlogo:hover,
+      .aboutlogo:hover {
+        transform: rotate(360deg);
+        transition: 1s;
+      }
+
+      .address {
+        color: black;
+      }
+
+
+
+
+    }
+
+    @media screen and (max-width:900px) and (min-width:600px) {
+      .textblocks {
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+        width: auto;
+        justify-content: space-around;
+        text-align: left;
+        background: linear-gradient(90deg, #00dbde, purple);
+        font-family: Roboto mono;
+      }
+
+      .block1 {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        width: auto;
+        background: linear-gradient(to right,
+            rgba(20, 3, 3, 0.404),
+            rgba(22, 5, 5, 0.548));
+        border-radius: 80px;
+
+
+
+      }
+
+      .heading1 {
+        background: linear-gradient(90deg, white, grey);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: none;
+      }
+
+
+      .block2 {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: auto;
+        width: auto;
+        background: linear-gradient(to right,
+            rgba(20, 3, 3, 0.404),
+            rgba(22, 5, 5, 0.548));
+        border-radius: 80px;
+      }
+
+      .heading2 {
+        background: linear-gradient(90deg, white, grey);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: none;
+      }
+
+      .body2 {
+        margin-bottom: 110px;
+      }
+
+      .learnmore {
+        background: linear-gradient(90deg, black, purple);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: none;
+
+      }
+
+      .learnmore:hover {
+        cursor: pointer;
+        font-size: bold;
+      }
+
+      .block3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: auto;
+        font-family: Roboto mono;
+        position: relative;
+      }
+
+      .block3::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(picture/cristiano-firmani-tmTidmpILWw-unsplash.jpg);
+        background-size: cover;
+        filter: blur(5px);
+        z-index: -1;
+      }
+
+
+
+      .heading3 {
+        background: linear-gradient(90deg, white, grey);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: none;
+      }
+
+      .body3 {
+        margin-bottom: 100px;
+      }
+
+      .addressbar {
+        margin-top: 200px;
+        height: auto;
+        width: auto;
+        border: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        background: linear-gradient(to right,
+            rgba(20, 3, 3, 0.404),
+            rgba(22, 5, 5, 0.548));
+        font-family: Roboto mono;
+        border-radius: 215px;
+        text-align: left;
+
+      }
+
+      .addressbar ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+
+      }
+
+
+
+      .addressbar .links,
+      .addressbar .about,
+      .addressbar .contactus {
+        height: auto;
+        width: auto;
+        color: white;
+      }
+
+      .linklogo {
+        border: none;
+        border-radius: 10px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+      }
+
+
+      .linklogo:hover,
+      .contactlogo:hover,
+      .aboutlogo:hover {
+        transform: rotate(360deg);
+        transition: 1s;
+      }
+
+      .address {
+        color: black;
+      }
+
+
+
+
+    }
+
+    .addressbar {
+      margin-top: 200px;
+      height: 150px;
+      width: auto;
+      padding: 100px;
+      border: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      background: linear-gradient(to right,
+          rgba(20, 3, 3, 0.404),
+          rgba(22, 5, 5, 0.548));
+      font-family: Roboto mono;
+      border-radius: 215px;
+      text-align: left;
+      margin-top: 500px;
+
+    }
+
+    .addressbar ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+
+    }
+
+    a:hover {
+      font-weight: bold;
+      transition: 0.2s;
+      background: linear-gradient(90deg, white, grey);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: none;
+      cursor: pointer;
+    }
+
+    .addressbar .links,
+    .addressbar .about,
+    .addressbar .contactus {
+      height: 150px;
+      width: 300px;
+      color: white;
+    }
+
+    .linklogo {
+      border: none;
+      border-radius: 10px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+    }
+
+
+    .linklogo:hover,
+    .contactlogo:hover,
+    .aboutlogo:hover {
+      transform: rotate(360deg);
+      transition: 1s;
+    }
+
+    .address {
+      color: black;
+    }
+
+    .aboutlogo,
+    .contactlogo {
+      margin-left: 10px;
+    }
+
+    .linkheading,
+    .contactheading,
+    .officeheading {
+      background: linear-gradient(90deg, #00dbde, rgb(173, 12, 173));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: none;
+    }
+
+    .backhomecontainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      justify-content: center;
+      margin-top: 100px;
+    }
+
+    .backhome {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      justify-content: center;
+      bottom: -5%;
+      text-decoration: none;
+      color: black;
+      font-family: Roboto mono;
+    }
+
+    .backhome:hover {
+      opacity: 0.8;
+      color: black;
+    }
+
+    .backhomeicon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      justify-content: center;
+    }
+
+    .backhomeicon:hover {
+      transform: rotate(360deg);
+      transition: 1s;
+    }
+  </style>
 </head>
 
 <body>
-  aida tu landlord k tujhy hm service dn gy
+  <div class="block1">
 
-  hahahah
-  chal bhag idr s
+    <h2 class="heading1">
+      About Instructor
+    </h2>
+
+    <p class="body1">
+
+      Welcome to my website! My name is Shahzeb Wlaeed, and I'm thrilled to have you here. This platform is all about
+      sharing my passion for teaching and programming with you. <br>
+
+
+      As someone deeply enthusiastic about learning and growth, I've created this space to offer you the opportunity to
+      explore and master new skills. Whether you're a beginner eager to dive into the world of programming or someone
+      looking to enhance your existing skill set, you've come to the right place.<br>
+
+      Programming is not just lines of code; it's a journey of creativity, problem-solving, and innovation. I believe
+      that everyone has the potential to become a skilled programmer, and my goal is to guide you through this journey
+      step by step. <br>
+
+      Through a variety of courses, tutorials, and resources, I aim to provide you with a comprehensive learning
+      experience that covers a wide range of topics, from web development to app creation and much more. Whether you're
+      interested in mastering the fundamentals or exploring advanced techniques, you'll find something tailored to your
+      needs here.<br>
+
+      Join me in this exciting adventure of acquiring new skills, honing your talents, and embracing the world of
+      programming. Together, we'll unlock your potential and empower you to create remarkable projects and
+      applications.<br>
+
+      Thank you for being a part of this journey. Let's learn, grow, and code together!
+    </p>
+
+  </div>
+
+  <div class="addressbar">
+
+    <div class="links">
+      <img class="linklogo" src="picture/linklogo.png">
+      <h3 class="linkheading">Links</h3>
+      <ul>
+        <li class="youtube"><a href="https://www.youtube.com/@srbsw/">Youtube</a></li>
+        <li class="instagram"><a href="https://www.instagram.com/shahzeb__awan/">Instagram</a></li>
+        <li class="facebook"><a href="https://www.facebook.com/valeedmalikk">Facebook</a></li>
+        <li class="github"><a href="https://github.com/waleeddcoder">Github</a></li>
+      </ul>
+
+
+    </div>
+
+    <div class="about">
+      <img class="aboutlogo" src="picture/aboutlogo.png">
+      <h3 class="officeheading">Office Address</h3>
+      <ul>
+        <li class="address">54 canning street <br> pur thal islmabad <br> oppsite eiffel tower <br>uganda
+
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="contactus">
+      <img class="contactlogo" src="picture/contactlogo.png">
+      <h3 class="contactheading">
+        Contact Us
+      </h3>
+      <ul>
+        <li class="email"><a href="mailto:waleedd555@icloud.com">waleedd555@icloud.com</a></li>
+        <li class="number"><a href="https://wa.me/+923331570071">+923331570071</a></li>
+
+      </ul>
+    </div>
+
+  </div>
+  <div class="backhomecontainer">
+    <img class="backhomeicon" src="picture/homeicon.png">
+    <h3 class="backhome"><a href="website.html">Back to Homepage</a></h3>
+  </div>
 </body>
 
 </html>
