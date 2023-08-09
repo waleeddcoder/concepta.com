@@ -227,6 +227,36 @@
       font-family: Roboto mono;
       margin-top: 10px;
     }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 10px;
+        /* Adjust padding for smaller screens */
+      }
+
+      .product {
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+        /* Center items horizontally */
+      }
+
+      .product-card {
+        width: 100%;
+        /* Take full width of the screen */
+        margin-right: 0;
+        /* Remove margin on small screens */
+        margin-bottom: 20px;
+        /* Adjust margin for spacing */
+      }
+
+      .product-image {
+        height: 250px;
+        /* Adjust image height */
+        border-radius: 0;
+        /* Remove border radius */
+      }
+    }
   </style>
 </head>
 
