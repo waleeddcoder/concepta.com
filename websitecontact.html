@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@900&display=swap"
     rel="stylesheet">
-  <title>Concepta:FAQS</title>
+  <title>Concepta: Contact Info</title>
   <style>
     body {
       background: white;
@@ -22,7 +22,6 @@
     nav {
       font-family: Roboto mono;
       position: fixed;
-      top: 0;
       width: 100%;
       z-index: 3000;
       justify-content: space-between;
@@ -34,8 +33,8 @@
       list-style-type: none;
       height: 55px;
       background-color: rgba(255, 255, 255, 0.8);
+      /* Transparent white */
       color: black;
-
 
 
     }
@@ -75,41 +74,65 @@
       cursor: pointer;
     }
 
-
-
-    .faq-container {
-      margin: 200px auto;
-      max-width: 800px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      background-image: url(picture/faqs.jpg);
+    .contactcontainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-image: url(picture/productbg3.jpg);
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: center center;
+      background-position: center;
+      margin-bottom: 100px;
+
+    }
+
+    .email,
+    .whatsapp,
+    .address {
+      list-style-type: none;
+    }
+
+    .address {
+      margin-top: 50px;
+      color: black;
+      font-family: Roboto mono;
       text-align: center;
-      border-radius: 15px;
+      font-size: large;
 
     }
 
-    .faq-item {
-      border-bottom: 1px solid #ddd;
-      padding: 20px 20px;
 
+    .icon {
+      width: 200px;
+      transition: transform 0.3s, filter 0.3s;
     }
 
-    .faq-question {
-      font-size: 18px;
-      font-weight: bold;
-      color: black;
+    .icon:hover {
+      transform: scale(1.2);
+      filter: brightness(1.2);
+    }
+
+    .tagline {
+      height: auto;
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       font-family: Roboto mono;
 
-
     }
 
-    .faq-answer {
-      margin-top: 10px;
-      font-size: 16px;
-      font-family: Roboto mono;
+    .taglineheading {
       color: black;
+      font-family: Roboto mono;
+      margin-top: 150px;
+    }
+
+
+    .taglinepara {
+      color: black;
+      font-family: Roboto mono;
 
     }
 
@@ -192,10 +215,11 @@
 
     }
   </style>
-  <title>FAQ Section</title>
 </head>
 
 <body>
+
+
   <nav>
 
     <ul>
@@ -208,61 +232,29 @@
 
   </nav>
 
-  <div class="faq-container">
-    <div class="faq-item">
-      <div class="faq-question">
-        <h2>FREQUENTLY ASKED QUESTIONS</h2><br><br><br>How do you conduct your teaching?
-      </div>
-      <div class="faq-answer">We primarily provide online classes, preferably using platforms such as Zoom or Google
-        Meet.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-question">How much time will it take to complete a course?</div>
-      <div class="faq-answer">Your progress and the timely completion of assignments and exercises depend on your level
-        of engagement. The more involved you are, the faster we can potentially finish the course, possibly even ahead
-        of the designated timeline.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-question">Is it possible to withdraw from a course midway?</div>
-      <div class="faq-answer">We strongly advise against doing so. Nevertheless, you have the freedom to withdraw, but
-        please note that it won't be officially recognized or endorsed.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-question">What is the daily teaching duration?</div>
-      <div class="faq-answer">We deliver a high-quality teaching experience. You have the flexibility to select a time
-        that aligns with your schedule, and we assure you of our utmost dedication during that time.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-question">When is the fee payment due?</div>
-      <div class="faq-answer">You'll have the opportunity for two trial sessions. If you decide to proceed with us,
-        you'll need to submit the course fee at that point.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-question">is the timeline same for all courses?</div>
-      <div class="faq-answer">No, the time required to complete a course varies from course to course.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-question">Can I enroll in multiple programming courses simultaneously?</div>
-      <div class="faq-answer">Yes, you can enroll in multiple courses at once. Our flexible learning platform allows you
-        to tailor your learning experience to your needs.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-question">Are your instructors experienced in the field of programming?</div>
-      <div class="faq-answer">Absolutely! Our instructors are seasoned professionals with years of experience in the
-        programming industry. They are dedicated to providing you with quality education.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-question">Do I need any prior programming experience to join the courses?</div>
-      <div class="faq-answer">Our courses are designed to accommodate learners of all levels, including beginners. No
-        prior experience is required, but having basic computer skills can be beneficial.</div>
+  <div class="contactcontainer">
+    <div class="tagline">
+      <h1 class="taglineheading">Talk to Us</h1>
+      <p class="taglinepara"> If you have any inquiries or wish to enroll in a course, don't hesitate to contact us
+        using the provided methods.
+      </p>
     </div>
 
-    <div class="faq-item">
-      <div class="faq-question">What kind of support is available if I encounter difficulties while learning?</div>
-      <div class="faq-answer">We offer comprehensive support, including Q&A sessions, instructor office hours, and a
-        dedicated support team. We're here to help you succeed.</div>
+
+    <div class="email">
+      <li><a href="mailto:waleedd555@icloud.com"><img class="icon" src="picture/mailicon.png" alt="mail"></a></li>
     </div>
 
+
+    <div class="whatsapp">
+
+      <li><a href="https://wa.me/+923331570071"><img class="icon" src="picture/whatsappicon.png" alt="whatsapp"></a>
+      </li>
+
+    </div>
+    <div class="address">
+      <li class="address">54 Canning street, <br>Winsor Town, <br>London.</li>
+    </div>
 
   </div>
   <div class="addressbar">
@@ -282,14 +274,13 @@
               src="picture/githubicon.png" alt=""></a></li>
       </ul>
 
-
     </div>
     <div class="footerlinks">
       <ul>
         <li><a href="website.html">Home</a></li>
         <li><a href="websiteprograms.html">Programs</a></li>
         <li><a href="websiteservices.html">About</a></li>
-        <li><a href="websitecontact.html">Contact</a></li>
+        <li><a href="websitefaq.html">FAQs</a></li>
 
 
       </ul>
@@ -297,7 +288,6 @@
 
     </div>
   </div>
-
 </body>
 
 </html>

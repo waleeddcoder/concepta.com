@@ -10,21 +10,82 @@
 
   <style>
     body {
+      background-image: url(picture/textblocksbg.jpg);
+      background-size: cover;
+      background-repeat: repeat-y;
+      background-position: center center;
+    }
 
-      background: linear-gradient(90deg, #00dbde, purple);
-      color: white;
+
+    * {
       margin: 0;
       padding: 0;
-      height: auto;
-      width: auto;
+    }
+
+    /* nav bar */
+    nav {
+      font-family: Roboto mono;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 3000;
+      justify-content: space-between;
+    }
+
+    nav ul {
+      display: flex;
+      align-items: center;
+      list-style-type: none;
+      height: 55px;
+      background-color: rgba(255, 255, 255, 0.8);
+      color: black;
+
 
 
     }
 
+    nav ul li {
+      padding: 0 12px;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+      display: flex;
+
+    }
+
+    nav ul li a:hover {
+      font-weight: bolder;
+      transition: 0.2s;
+    }
+
+
+    .logo img {
+      width: 34px;
+      padding: 0 8px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: bolder;
+      font-size: 1.3rem;
+    }
+
+    .logo:hover {
+      cursor: pointer;
+    }
+
+
+
+
     .product {
       position: relative;
       overflow: hidden;
-      padding: 30px;
+      padding: auto;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -32,6 +93,7 @@
       height: auto;
       width: auto;
       border-radius: 10px;
+      margin-top: 100px;
 
     }
 
@@ -60,7 +122,6 @@
       flex: 0 0 auto;
       width: 350px;
       height: 450px;
-      margin-right: 30px;
       margin-bottom: 100px;
     }
 
@@ -87,6 +148,8 @@
       right: 10px;
       top: 10px;
       text-transform: capitalize;
+      font-family: Roboto mono;
+
 
     }
 
@@ -138,7 +201,6 @@
       opacity: 0.5;
       text-transform: capitalize;
       margin: 5px 0;
-      margin-top: -10px;
       font-family: Roboto mono;
 
     }
@@ -154,6 +216,7 @@
       margin-left: 20px;
       opacity: 0.5;
       text-decoration: line-through;
+      font-family: Roboto mono;
     }
 
     a {
@@ -162,105 +225,121 @@
 
     }
 
-    .backhome {
+    /* addressbar */
+    .addressbar {
+      margin-top: 200px;
+      height: auto;
+      width: auto;
+      padding: 50px;
+      border: none;
+      font-family: Roboto mono;
+      border-radius: 215px;
+
+    }
+
+    .addressbar ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .links ul {
       display: flex;
-      flex-direction: column;
       align-items: center;
-      position: relative;
       justify-content: center;
-      bottom: -5%;
+    }
+
+    .footerlinks {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      list-style-type: none;
+      color: black;
+    }
+
+    .footerlinks ul {
+      display: flex;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footerlinks ul li {
+      padding: 0 12px;
+    }
+
+    .footerlinks ul li a {
       text-decoration: none;
       color: black;
-      font-family: Roboto mono;
     }
 
-    .backhome:hover {
-      opacity: 0.8;
+    .footerlinks ul li a:hover {
+      font-weight: bolder;
+      transition: 0.2s;
+    }
+
+
+    .address {
       color: black;
     }
 
-    .backhomeicon {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: relative;
-      justify-content: center;
+
+
+    .youtubeicon,
+    .instaicon,
+    .githubicon,
+    .fbicon {
+      height: 30px;
+      width: 30px;
+      display: inline-block;
+      margin-left: 15px;
+      transition: transform 0.2s ease-in-out;
+
     }
 
-    .backhomeicon:hover {
-      transform: rotate(360deg);
-      transition: 1s;
+    .youtubeicon:hover,
+    .instaicon:hover,
+    .githubicon:hover,
+    .fbicon:hover {
+      transform: scale(0.9);
+
     }
 
-    .backhomeanchor {
-      opacity: 0.8;
-      color: black;
-    }
-
-    .backhomecontainer {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: relative;
-      justify-content: center;
-      margin-top: 20px;
-    }
-
-    .backhomeicon {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: relative;
-      justify-content: center;
-      width: 60px;
-      height: 60px;
-    }
-
-    .backhomeicon:hover {
-      transform: rotate(360deg);
-      transition: 1s;
-    }
-
-    .backhomeanchor {
-      opacity: 0.8;
-      color: black;
-      font-family: Roboto mono;
-      margin-top: 10px;
-    }
 
     @media (max-width: 768px) {
       body {
         padding: 10px;
-        /* Adjust padding for smaller screens */
       }
 
       .product {
         flex-direction: column;
-        /* Stack items vertically */
         align-items: center;
-        /* Center items horizontally */
       }
 
       .product-card {
         width: 100%;
-        /* Take full width of the screen */
         margin-right: 0;
-        /* Remove margin on small screens */
         margin-bottom: 20px;
-        /* Adjust margin for spacing */
       }
 
       .product-image {
         height: 250px;
-        /* Adjust image height */
         border-radius: 0;
-        /* Remove border radius */
       }
     }
   </style>
 </head>
 
 <body>
+  <nav>
+
+    <ul>
+
+      <li class="logo"><a href="website.html"><img src="picture/conceptalogoofficial.png" alt="logo">Concepta</a></li>
+      <li><a href="website.html">Home</a></li>
+
+    </ul>
+
+  </nav>
   <section class="product">
 
     <div class="product-container">
@@ -392,9 +471,38 @@
     </div>
   </section>
 
-  <div class="backhomecontainer">
-    <img class="backhomeicon" src="picture/homeicon.png">
-    <h3 class="backhome"><a class="backhomeanchor" href="website.html">Back to Homepage</a></h3>
+  <div class="addressbar">
+
+
+
+
+    <div class="links">
+      <ul>
+        <li class="youtube"><a href="https://www.youtube.com/@srbsw/"><img class="youtubeicon" src="picture/youtube.png"
+              alt=""></a></li>
+        <li class="instagram"><a href="https://www.instagram.com/shahzeb__awan/"><img class="instaicon"
+              src="picture/instagramicon.png" alt=""></a></li>
+        <li class="facebook"><a href="https://www.facebook.com/valeedmalikk"><img class="fbicon"
+              src="picture/facebookicon.png" alt=""></a></li>
+        <li class="github"><a href="https://github.com/waleeddcoder"><img class="githubicon"
+              src="picture/githubicon.png" alt=""></a></li>
+      </ul>
+
+
+    </div>
+    <div class="footerlinks">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="websiteservices.html">About</a></li>
+        <li><a href="websitecontact.html">Contact</a></li>
+        <li><a href="websitefaq.html">FAQs</a></li>
+
+
+
+      </ul>
+
+
+    </div>
   </div>
 </body>
 
