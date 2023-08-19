@@ -133,6 +133,8 @@ nav ul li a:hover {
   width: auto;
   font-family: Roboto mono;
   position: relative;
+  padding-right: 250px;
+  padding-left: 250px;
 }
 
 
